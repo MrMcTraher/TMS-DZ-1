@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  font-family: $futura;
+  font-weight: 400;
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.container--subs {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.slick-prev {
+  display: block;
+  left: -120px;
+  top: 225px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ff3333;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: url("../images/subs/left-arrow.png");
+  }
+}
+
+.slick-next {
+  display: block;
+  right: -1150px;
+  top: -150px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ff3333;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: url("../images/subs/right-arrow.png");
+  }
+}
