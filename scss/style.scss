@@ -32,6 +32,17 @@
   &__menu-item {
   }
 
+  /* burger menu */
+  &__menu-burger {
+	display: none;
+  }
+
+  &__menu-burger-icon {
+    color: #fff;
+	 
+  }
+  /* burger menu--end */
+
   &__menu-link {
     color: #fff;
     font-size: 14px;
@@ -499,7 +510,7 @@
     &::after {
       content: url("../images/subs/logo-vip.png");
       position: absolute;
-      top: -42px;
+      top: -43px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 10;
@@ -548,6 +559,11 @@
     display: block;
     text-align: center;
   }
+}
+
+.slick-list {
+  padding-top: 80px;
+  margin-top: -80px;
 }
 
 .system {
@@ -1074,3 +1090,5 @@
     display: block;
   }
 }
+
+@import "_media.scss";
